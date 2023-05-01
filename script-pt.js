@@ -1,7 +1,7 @@
 window.onload = function() {
     
     var typed = new Typed('#typed', {
-        strings: ["a Developer", "a Freelancer", "a Student"],
+        strings: [" Dev", " Freelancer", " Aluno"],
         typeSpeed: 100,
         backSpeed: 50,
         // startDelay: 1200,

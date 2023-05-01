@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="script.js"></script>  
+    <script src="script-de.js"></script>  
     
 
 </head>
@@ -33,9 +33,10 @@
                 </ul>
             </nav>
         </header>
-        <div>
+        <div class="titlebox hidden">
             <h1>Fabio Procopio</h1>
-            <h1 id="Im" style="margin: 20px 20px 20px 10px; font-size: 37px;"><span>Ich bin ein </span><span id="typed"></span><span id="cursor"></span></h1>
+            <h1 id="Im" style="margin: 20px 20px 20px 10px; font-size: 37px;">
+                <span>Ich bin </span><span id="typed"></span><span id="cursor"></span></h1>
         </div>
 
         <svg class="arrows">
@@ -47,14 +48,14 @@
     <div class="content-container">
         <div class="profile-container" id="profile">
             <div class="profile-content">
-                <div class="profile-card" id="profile-card">
+                <div class="profile-card hidden" id="profile-card">
                     <img class="profile-image" src="./ProfilePic.jpg" />
                     <span class="name-text">Fabio Procopio</span>
                     <span class="profile-text">
                         Fokus, Konsequenz und Kreativität. 
                         <br>Lass uns etwas Großartiges schaffen!
                     </span>
-                    <div>
+                    <div class="socialmediabuttons">
                         <a href="https://www.linkedin.com/in/fabio-procopio-dev/" target="_blank">
                             <button class="profile-button">
                                 Mein Linkedin
@@ -75,7 +76,7 @@
                 </div>
             </div>
 
-            <p class="profile-sinopse">
+            <p class="profile-sinopse hidden">
                 Junior Entwickler - Front & Backend<br>
                 <br>
                 Ich bin immer an neuen Technologien interessiert, <br>ihrer Entwicklung und über sie zu lernen!<br> 
@@ -96,7 +97,7 @@
                 Außerdem habe ich einen Hintergrund in Grafik Design.
                 <br>
                 <br>
-                Sprachen: German, Englisch, Portuguiesisch(Brasilien)
+                Sprachen: Deutsch, Englisch, Portuguiesisch(Brasilien)
             </p>
         </div>
     </div>
@@ -109,12 +110,13 @@
 
                 <div class="position-container right">
                     <a class="project-card" href="https://findhorn-galabau.de/" target="_blank">
-                        <image class="project-image" src="./findhornimage.JPG" />
+                        <image class="project-image hidden" src="./findhornimage.jpg" />
                         <p class="project-text">
                             Findhorn Galabau Webseite - Freelance Kunde
                             <br> Eine Website für ein Gartenbauunternehmen. Ich habe ihre Seite mit einfachem Html, Css und Js erstellt.
                             Jetzt führe ich regelmäßige Aktualisierungen der Website durch, wie z.B.
                             das ändern von Bilder, Texten und Funktionen.<br>
+                            <br>
                             www.findhorn-galabau.de 🔗
                         </p>
                     </a>
@@ -122,7 +124,7 @@
 
                 <div class="position-container left">
                     <a class="project-card card-reverse" href="https://procsanart.com/" target="_blank">
-                        <image class="project-image image-reverse" src="./procsanart.JPG" />
+                        <image class="project-image image-reverse hidden" src="./procsanart.jpg" />
                         <p class="project-text">
                             ProcsanArt Website - Persönliches Project
                             <br> My personal Website to display my digital Art. Made with React, Javascript and Css.<br>
@@ -136,7 +138,7 @@
                 
                 <div class="position-container right">
                     <a class="project-card" href="https://github.com/FabiProcopio" target="_blank">
-                        <image class="project-image" src="./ytclone.JPG" />
+                        <image class="project-image hidden" src="./ytclone.jpg" />
                         <p class="project-text">
                             Kreation der YouTubeseite mit API und Datenbank
                             <br> Bestimmte Bereiche erstellt mit der Youtubeseite als Vorlage in React mit Typescript, styled components und Node.js
@@ -152,7 +154,7 @@
     <div class="content-container" id="contact">
         <div class="form-container">
 
-            <div class="contact-form">
+            <div class="contact-form hidden">
                 Kontakt
             </div>
 
